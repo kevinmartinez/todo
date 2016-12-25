@@ -1,0 +1,75 @@
+/* Acting as a container at the moment */
+main {
+    width: 60%;
+    max-width: 500px;
+}
+
+ul, ol {
+    list-style-type: armenian;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-family: Spinnaker;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+
+h3 {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+
+ul li {
+    padding: 15px;
+    background: #FFFFF7;
+    color: #2CC990;
+    margin-top: 5px;
+    max-width: 250px;
+}
+
+ul li label {
+    text-align: center;
+    display: block;
+}
+
+ul li input {
+    display: inline-block;
+    height: 40px;
+}
+
+ul li button {
+    height: 40px;
+    /* Using postcss short plugin for writing more shorthand */
+    color: white #2C82C9;
+    display: inline-block;
+    padding: 5px;
+}
+
+ul {
+    width: 100%;
+    a {
+        text-decoration: none;
+    }
+    &::before {
+        content: '';
+    }
+}

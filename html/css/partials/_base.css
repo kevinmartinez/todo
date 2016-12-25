@@ -1,0 +1,18 @@
+$text_color: #232323;
+ 
+body {
+    color: $text_color seagreen;
+}
+
+* {
+    box-sizing: border-box;
+    /* outline helper class */
+    outline: 1px solid red; 
+}
+
+
+
+body {
+    color: crimson tomato;
+    font-family: "Open Sans";
+}
