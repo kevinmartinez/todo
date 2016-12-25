@@ -1,7 +1,7 @@
 $text_color: #232323;
  
 body {
-    color: $text_color seagreen;
+    color: $text_color seagreen; /* Hello _base World */
 }
 
 * {
@@ -10,7 +10,10 @@ body {
     outline: 1px solid red; 
 }
 
-
+pre {
+    color: yellow green;
+    color: $text_color;
+}
 
 body {
     color: crimson tomato;

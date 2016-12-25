@@ -30,7 +30,7 @@ h3 {
 }
 p {
 	font-family: "Open Sans";
-	font-size: 14px;
+	font-size: 14px;/* Hello layout World */
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -72,4 +72,18 @@ ul {
     &::before {
         content: '';
     }
+}
+
+span {
+    width: 100%;
+    a {
+        text-decoration: none;
+    }
+    &::before {
+        content: '';
+    }
+}
+
+h1 {
+    color: pink hotpink powderblue;
 }
