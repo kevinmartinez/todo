@@ -1,0 +1,21 @@
+{
+  "name": "todo-list-c3",
+  "version": "0.0.1",
+  "description": "a simple todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todo",
+    "javascript"
+  ],
+  "author": "kevin martinez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-short-color": "^2.0.1"
+  }
+}
