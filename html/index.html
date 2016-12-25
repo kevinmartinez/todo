@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Spinnaker" />
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
         <h1>Todo List</h1>
     </header>
     <main role="main">
-        <div id="" class="add-item-container">
+        <section id="" class="add-item-container">
+            <h2>Add item</h2>
             <ul class="add-item-ul">
-                <li>Hello
-                    <label for="add-item">eeh?</label>
+                <!-- TODO: identifier names -->
+                <li class="list-item">
+                    <label for="add-item">Add new item</label>
                     <input type="text" id="add-item" placeholder="add item">
                     <button class="add-button" type="submit">Add!</button>
                 </li>
                 <li>Add item li? in ul? :O</li>
             </ul>
-        </div>
+        </section>
         <!-- Todo Items -->
-        <div class="todo-item-container">
-            <ul>
-                <li>Todo Item LI :O</li>
+        <section class="todo-item-container">
+            <h2>ToDo items</h2>
+            <ul class="todo-item-ul">
+        
             </ul>
-        </div>
+        </section>
         <!-- Checked items? -->
+        <section class="done-items">
+            <h2>Done items?</h2>
+            <ul class="done-items-ul">
+                <li class="done-item">
+                    Yes I is Done
+                </li>
+            </ul>
+        </section>
     </main>
+    <footer>
+        <h4>Thank you</h4>
+        <p>&copy;kevin 2016</p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
