@@ -1,21 +1,36 @@
 $text_color: #232323;
+$text-ninjablack: #223242;
+$text-eveningblack: #34495e;
  
 body {
-    color: $text_color seagreen; /* Hello _base World */
+ /* Hello _base World */
 }
 
 * {
     box-sizing: border-box;
     /* outline helper class */
-    outline: 1px solid red; 
-}
-
-pre {
-    color: yellow green;
-    color: $text_color;
+    /*outline: 1px solid red; */
 }
 
 body {
-    color: crimson tomato;
     font-family: "Open Sans";
+}
+
+header,
+main,
+footer {
+    padding: 100px; /* get converted to rem in output */
+    height: 50vh;
+}
+
+header {
+    background: white;
+}
+
+main {
+    background: #ECD2E1;
+}
+
+footer {
+    background: #D9D2EC;
 }
