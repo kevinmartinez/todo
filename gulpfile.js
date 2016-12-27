@@ -5,10 +5,18 @@ var pxtorem = require('postcss-pxtorem');
 var shortColor = require('postcss-short-color');
 var precss = require('precss');
 var cssnano = require('cssnano');
+var browserSync = require('browser-sync').create();
 
-gulp.task('default', function() {
-  // place code for your default task here
-  console.log('hello from gulp');
+
+
+// browserSync
+gulp.task('serve', ['css'], function() {
+  
+  browserSync.init({
+    server: './html'
+  });
+  gulp.watch('html/css/partials/*.css', ['css']);
+  gulp.watch('html/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('css', function () {
@@ -17,7 +25,8 @@ gulp.task('css', function () {
     precss,
     shortColor,
     pxtorem]))
-  .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest('html/test'))
+  .pipe(browserSync.stream());
 });
 
 gulp.task('minifycss', function() {
@@ -26,15 +35,7 @@ gulp.task('minifycss', function() {
   .pipe(postcss([cssnano]))
   // rename via string
   .pipe(gulp.dest('dist'))
-  
-})
+});
 
-// gulp.task('css', function () {
-//     return gulp.src('./css/src/*.css').pipe(
-//         postcss([
-//             require('precss')({ /* options */ })
-//         ])
-//     ).pipe(
-//         gulp.dest('./css')
-//     );
-// });
+// default task
+gulp.task('default', ['serve']);
