@@ -7,9 +7,7 @@ var precss = require('precss');
 var cssnano = require('cssnano');
 var browserSync = require('browser-sync').create();
 
-
-
-// browserSync
+// browserSync with some default settings
 gulp.task('serve', ['css'], function() {
   
   browserSync.init({
@@ -19,6 +17,7 @@ gulp.task('serve', ['css'], function() {
   gulp.watch('html/*.html').on('change', browserSync.reload);
 });
 
+// Process PostCSS
 gulp.task('css', function () {
   return gulp.src('html/css/*.css')
   .pipe(postcss([
@@ -29,6 +28,7 @@ gulp.task('css', function () {
   .pipe(browserSync.stream());
 });
 
+// Optimize CSS file size
 gulp.task('minifycss', function() {
   return gulp.src('dist/style.css')
   .pipe(rename('dist/min/min.style.css'))
