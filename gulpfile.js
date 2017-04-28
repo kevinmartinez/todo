@@ -24,7 +24,7 @@ gulp.task('css', function () {
     precss,
     shortColor,
     pxtorem]))
-  .pipe(gulp.dest('html/test'))
+  .pipe(gulp.dest('html/dist'))
   .pipe(browserSync.stream());
 });
 
