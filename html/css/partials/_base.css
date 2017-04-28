@@ -2,14 +2,8 @@ $text_color: #232323;
 $text-ninjablack: #223242;
 $text-eveningblack: #34495e;
  
-body {
- /* Hello _base World */
-}
-
 * {
     box-sizing: border-box;
-    /* outline helper class */
-    /*outline: 1px solid red; */
 }
 
 body {
@@ -19,8 +13,7 @@ body {
 header,
 main,
 footer {
-    padding: 100px; /* get converted to rem in output */
-    height: 50vh;
+    padding: 20px; /* get converted to rem in output */
 }
 
 header {

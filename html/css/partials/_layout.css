@@ -1,12 +1,10 @@
 /* Acting as a container at the moment */
 main {
-    width: 60%;
-    max-width: 500px;
     margin: auto;
 }
 
 ul, ol {
-    list-style-type: armenian;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -22,13 +20,13 @@ h3 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 16px;
     line-height: 1.3;
 }
 
 h3 {
     color: $text-ninjablack;
-	font-size: 30px;
+	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
@@ -60,17 +58,38 @@ ul li label {
 ul li input {
     display: inline-block;
     height: 40px;
+    background: #D2D7D3;
+    width: 100%;
+    border: 0;
+    color: yellow;
 }
 
 ul li button {
-    height: 40px;
     /* Using postcss short plugin for writing more shorthand */
-    color: white #2C82C9;
-    display: inline-block;
-    padding: 5px;
+    color: #E7E7E7 #3D8EB9;
+    display: block;
+    padding: 15px 0;
+    border: 0;
+    width: 100%;
 }
 
-ul {
+.todo-item {
+    p {
+        background: #D2D7D3;
+        padding: 10px 0;
+        margin: 0;
+    }
+}
+
+.button-danger {
+    background: #CF000F;
+}
+
+.button-done {
+    background: #71BA51;
+}
+
+/*ul {
     width: 100%;
     a {
         text-decoration: none;
@@ -78,9 +97,9 @@ ul {
     &::before {
         content: '';
     }
-}
+}*/
 
-span {
+/*span {
     width: 100%;
     a {
         text-decoration: none;
@@ -88,10 +107,10 @@ span {
     &::before {
         content: '';
     }
-}
+}*/
 
 h1 {
-	font-size: 80px;
+	font-size: 30px;
     color: pink green blue;
 	/*font-style: normal;
 	font-variant: normal;*/
